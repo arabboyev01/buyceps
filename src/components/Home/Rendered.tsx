@@ -1,4 +1,12 @@
-import { Image, PockemonCart, Subtitle, Title, Types, ImageWrapper, Number } from '@/src/components/Home/home.style'
+import {
+    Image,
+    PockemonCart,
+    Subtitle,
+    Title,
+    Types,
+    ImageWrapper,
+    Number,
+} from '@/src/components/Home/home.style'
 import React from 'react'
 import { MainDataTypes } from '@/types'
 
@@ -19,4 +27,4 @@ const Rendered = ({data}: any) => {
     )
 }
 
-export default Rendered;
+export default Rendered ;

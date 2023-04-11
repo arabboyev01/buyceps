@@ -11,4 +11,5 @@ export type HomePageDataType = {
     data: MainDataTypes
     loading: boolean | undefined
     error?: ApolloError | undefined
+    handleAddPage: any
 }
