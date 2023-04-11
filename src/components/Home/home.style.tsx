@@ -4,12 +4,10 @@ import styled from 'styled-components'
 export const HomeComponent = styled.div`
   max-width: 1220px;
   margin: 50px auto;
-`
-
-export const ContentWrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   grid-gap: 20px;
+  align-items: center;
 `
 export const PockemonCart = styled.div`
   max-width: 340px;
@@ -20,6 +18,13 @@ export const Title = styled.h1`
   margin: 18px 0;
   font-weight: 700;
   color: darkorange;
+`
+export const Types = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
 `
 
 export const Subtitle = styled.p`

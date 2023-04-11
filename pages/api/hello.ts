@@ -10,16 +10,9 @@ export const GET_LOCATIONS = gql`
       id
       number
       name
-      weight{
-        minimum
-        maximum
-      }
-      height{
-        minimum
-        maximum
-      }
       image
       classification
+      types
     }
   }
 `;
