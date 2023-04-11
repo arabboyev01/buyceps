@@ -33,6 +33,10 @@ export const Subtitle = styled.p`
   border-radius: 3px;
   font-size: 14px;
   padding: 5px;
+  background: #333;
+  color: aliceblue;
+  width: 60px;
+  text-align: center;
 `
 export const ImageWrapper = styled.div`
   width: 250px;
