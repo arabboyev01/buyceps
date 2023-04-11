@@ -4,13 +4,17 @@ import { HomePageDataType } from '@/types'
 import Rendered from '@/src/components/Home/Rendered'
 import Loader from '@/src/components/Loader'
 
-const HomeDumb: React.FC<HomePageDataType> = ({data, loading, handleAddPage}) => (
+const HomeDumb: React.FC<HomePageDataType> = ({data, loading, handleAddPage, handleRoutePage}) => (
     <HomeComponent>
-        <MainTitle>Home Page</MainTitle>
-        <ContentWrapper>
-            {loading ? <Loader/> : <Rendered data={data}/>}
-        </ContentWrapper>
-        {loading ? null : <LoadMore onClick={handleAddPage}>Load more</LoadMore>}
+        {loading ? <Loader/> :
+            <>
+                <MainTitle>Home Page</MainTitle>
+                <ContentWrapper>
+                    <Rendered data={data} handleRoutePage={handleRoutePage}/>
+                </ContentWrapper>
+                <LoadMore onClick={handleAddPage}>Load more</LoadMore>
+            </>
+        }
     </HomeComponent>
 )
 export default HomeDumb;

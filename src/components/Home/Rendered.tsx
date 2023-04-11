@@ -10,9 +10,9 @@ import {
 import React from 'react'
 import { MainDataTypes } from '@/types'
 
-const Rendered = ({data}: any) => {
+const Rendered = ({data, handleRoutePage}: any) => {
     return data?.pokemons?.map(({id, name, types, image, number}: MainDataTypes) =>
-        <PockemonCart key={id}>
+        <PockemonCart onClick={() => handleRoutePage(id, name)} key={id}>
             <ImageWrapper>
                 <Image src={image} alt="images"/>
             </ImageWrapper>
@@ -27,4 +27,4 @@ const Rendered = ({data}: any) => {
     )
 }
 
-export default Rendered ;
+export default Rendered;

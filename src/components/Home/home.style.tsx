@@ -77,7 +77,7 @@ export const LoadMore = styled.button`
   background: #000;
   color: #fff;
   margin: 30px 0 30px 450px;
-  padding: 20px 40px;
+  padding: 15px 40px;
   border-radius: 5px;
   border: none;
   cursor: pointer;

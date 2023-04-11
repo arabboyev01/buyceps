@@ -12,4 +12,5 @@ export type HomePageDataType = {
     loading: boolean | undefined
     error?: ApolloError | undefined
     handleAddPage: any
+    handleRoutePage: (e: any, b: any) => void
 }
