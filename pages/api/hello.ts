@@ -4,7 +4,7 @@ export const client = new ApolloClient({
   cache: new InMemoryCache(),
 });
 
-export const GET_LOCATIONS = gql`
+export const GET_ALL_POKEMONS = gql`
   query pokemons($first: Int!) {
     pokemons(first: $first) {
       id

@@ -1,9 +1,13 @@
+import Head from 'next/head'
 import HomePage from '@/src/components/Home'
 
 export default function Home() {
     return (
-        <div>
-            <HomePage />
-        </div>
+        <>
+            <Head>
+                <title>All Pokemons</title>
+            </Head>
+            <HomePage/>
+        </>
     )
 }
