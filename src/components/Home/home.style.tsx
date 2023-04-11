@@ -2,7 +2,7 @@
 import styled from 'styled-components'
 
 export const HomeComponent = styled.div`
-  max-width: 1220px;
+  max-width: 1020px;
   margin: 50px auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -14,6 +14,12 @@ export const PockemonCart = styled.div`
    border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   padding: 10px;
+  cursor: pointer;
+  transition: .3s ease-in-out;
+  &:hover{
+    transform: scale(1.02);
+    box-shadow: 1px 1px 6px 0.5px rgba(0, 0, 0, 0.1);
+  }
 `
 export const Title = styled.h1`
   font-size: 22px;
