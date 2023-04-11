@@ -1,13 +1,25 @@
-// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-import type { NextApiRequest, NextApiResponse } from 'next'
+import { ApolloClient, gql, InMemoryCache } from '@apollo/client';
+export const client = new ApolloClient({
+  uri: 'https://graphql-pokemon2.vercel.app',
+  cache: new InMemoryCache(),
+});
 
-type Data = {
-  name: string
-}
-
-export default function handler(
-  req: NextApiRequest,
-  res: NextApiResponse<Data>
-) {
-  res.status(200).json({ name: 'John Doe' })
-}
+export const GET_LOCATIONS = gql`
+  query pokemons($first: Int!) {
+    pokemons(first: $first) {
+      id
+      number
+      name
+      weight{
+        minimum
+        maximum
+      }
+      height{
+        minimum
+        maximum
+      }
+      image
+      classification
+    }
+  }
+`;
