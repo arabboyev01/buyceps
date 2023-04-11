@@ -16,6 +16,7 @@ export const PockemonCart = styled.div`
   padding: 10px;
   cursor: pointer;
   transition: .3s ease-in-out;
+  background: #fff;
   &:hover{
     transform: scale(1.02);
     box-shadow: 1px 1px 6px 0.5px rgba(0, 0, 0, 0.1);
