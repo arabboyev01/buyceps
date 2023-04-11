@@ -8,9 +8,9 @@ const Loader = () => {
             radius={1}
             color="#ccc"
             ariaLabel="puff-loading"
-            wrapperStyle={{}}
             wrapperClass=""
             visible={true}
+            wrapperStyle={{position: 'absolute', top: '45%', left: "47%"}}
         />
     )
 }
