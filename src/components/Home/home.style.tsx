@@ -5,11 +5,11 @@ export const HomeComponent = styled.div`
   max-width: 1220px;
   margin: 50px auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-row-gap: 60px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-row-gap: 30px;
 `
 export const PockemonCart = styled.div`
-  max-width: 250px;
+  max-width: 220px;
   height: auto;
    border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 8px;
