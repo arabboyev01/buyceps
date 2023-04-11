@@ -29,8 +29,10 @@ export const Types = styled.div`
 `
 
 export const Subtitle = styled.p`
-  font-size: 12px;
-  line-height: 16px;
+  border: 0.5px solid rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  font-size: 14px;
+  padding: 5px;
 `
 export const ImageWrapper = styled.div`
   width: 250px;
