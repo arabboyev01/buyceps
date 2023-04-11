@@ -5,7 +5,11 @@ export const HomeComponent = styled.div`
   max-width: 1020px;
   margin: 50px auto;
 `
-
+export const MainTitle = styled.h1`
+  font-size: 32px;
+  margin: 18px 0;
+  font-weight: 700;
+`
 export const ContentWrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -58,7 +62,7 @@ export const ImageWrapper = styled.div`
   justify-content: center;
 `
 export const Image = styled.img`
-  width: 150px;
+  max-width: 150px;
   height: 150px;
   object-fit: contain;
 `
@@ -72,16 +76,18 @@ export const Number = styled.p`
 export const LoadMore = styled.button`
   background: #000;
   color: #fff;
-  justify-content: center;
-  align-items: center;
-  margin: 30px 0;
+  margin: 30px 0 30px 450px;
   padding: 20px 40px;
   border-radius: 5px;
   border: none;
   cursor: pointer;
-
+  
   &:hover {
     color: #000;
     background: #fff;
+  }
+  
+  @media(max-width: 650px){
+    margin: 30px 0 30px 100px;
   }
 `

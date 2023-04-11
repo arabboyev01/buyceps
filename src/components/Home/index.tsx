@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useState } from 'react'
 import { useQuery } from '@apollo/client'
 import { GET_ALL_POKEMONS } from '@/pages/api/hello'
 import HomeDumb from '@/src/components/Home/HomeDumb'
@@ -12,7 +12,14 @@ const HomePage = () => {
         setCount(count + 20)
     }
 
-    return <HomeDumb data={data} loading={loading} error={error} handleAddPage={handleAddPage}/>
+    return (
+        <HomeDumb
+            data={data}
+            loading={loading}
+            error={error}
+            handleAddPage={handleAddPage}
+        />
+    )
 
 }
 export default HomePage;
