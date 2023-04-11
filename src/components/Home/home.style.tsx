@@ -7,7 +7,6 @@ export const HomeComponent = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-row-gap: 60px;
-  align-items: center;
 `
 export const PockemonCart = styled.div`
   max-width: 250px;
