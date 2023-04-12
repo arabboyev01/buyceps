@@ -13,7 +13,6 @@ const SingleCart = () => {
         variables: {id: id, name: name},
     });
     console.log(data)
-
     return (
         <SinglePage>
             {loading ? <Loader /> : <SingleDumb data={data?.pokemon} />}
@@ -21,4 +20,4 @@ const SingleCart = () => {
     )
 }
 
-export default SingleCart
+export default SingleCart;
