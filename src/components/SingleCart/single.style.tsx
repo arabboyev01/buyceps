@@ -86,12 +86,13 @@ export const MainTitle = styled.h1`
 `
 
 export const AddInfo = styled.div`
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  grid-row-gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  grid-row-gap: 10px;
   margin-top: 20px;
 `
 export const SomeInfo = styled.div`
-  width: 100px;
+  width: 80px;
   height: 30px;
   background: #000;
   color: #fff;

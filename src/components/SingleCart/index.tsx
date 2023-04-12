@@ -4,7 +4,7 @@ import { useRouter } from 'next/router'
 import { SinglePage } from '@/src/components/SingleCart/single.style'
 import Loader from '@/src/components/Loader'
 import SingleDumb from '@/src/components/SingleCart/SingleDumb'
-
+import HomePage from "../Home"
 const SingleCart = () => {
     const router = useRouter()
     const {id, name} = router.query
@@ -16,6 +16,7 @@ const SingleCart = () => {
     return (
         <SinglePage>
             {loading ? <Loader /> : <SingleDumb data={data?.pokemon} />}
+            <HomePage />
         </SinglePage>
     )
 }

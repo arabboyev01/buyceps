@@ -23,6 +23,8 @@ const SingleDumb = ({data}: any) => (
             <PokemonDescription weight={data.weight} height={data.height}/>
             <MainTitle>Types</MainTitle>
             <BlockType data={data.types}/>
+            <MainTitle>Weaknesses</MainTitle>
+            <BlockType data={data.weaknesses}/>
         </Description>
     </SingleContent>
 )
