@@ -13,8 +13,8 @@ export const SingleContent = styled.div`
 `
 
 export const ImageContent = styled.div`
-  width: 350px;
-  height: 350px;
+  width: 450px;
+  height: 450px;
   background: #fff;
   display: flex;
   flex-direction: column;
@@ -23,8 +23,8 @@ export const ImageContent = styled.div`
 `
 
 export const Image = styled.img`
-  width: 250px;
-  height: 250px;
+  width: 350px;
+  height: 350px;
   object-fit: contain;
 `
 
@@ -32,9 +32,20 @@ export const Description = styled.div`
 
 `
 export const Name = styled.h1`
-  
+
 `
 
 export const Classification = styled.p`
 
+`
+
+export const PokemonDescription = styled.div`
+
+`
+
+export const Number = styled.p`
+  margin-top: 5px;
+  font-size: 22px;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.4);
 `

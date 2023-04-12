@@ -9,7 +9,7 @@ const SingleCart = () => {
     const router = useRouter()
     const {id, name} = router.query
 
-    const {loading, error, data} = useQuery(GET_SINGLE_POKEMON, {
+    const {loading, data} = useQuery(GET_SINGLE_POKEMON, {
         variables: {id: id, name: name},
     });
     console.log(data)
