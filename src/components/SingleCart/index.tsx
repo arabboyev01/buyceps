@@ -12,7 +12,7 @@ const SingleCart = () => {
     const {loading, data} = useQuery(GET_SINGLE_POKEMON, {
         variables: {id: id, name: name},
     });
-    console.log(data)
+
     return (
         <SinglePage>
             {loading ? <Loader /> : <SingleDumb data={data?.pokemon} />}
