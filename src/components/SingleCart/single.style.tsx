@@ -3,13 +3,17 @@ import styled from 'styled-components'
 
 export const SinglePage = styled.div`
   max-width: 1000px;
-  margin: 100px auto;
+  margin: 100px auto 150px auto;
 `
 
 export const SingleContent = styled.div`
   display: flex;
   flex-direction: row;
   gap: 50px;
+  margin-bottom: 100px;
+  @media(max-width: 650px){
+    flex-direction: column;
+  }
 `
 
 export const ImageContent = styled.div`
@@ -20,12 +24,20 @@ export const ImageContent = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  @media (max-width: 650px) {
+    width: 300px;
+    height: 300px;
+  }
 `
 
 export const Image = styled.img`
   width: 350px;
   height: 350px;
   object-fit: contain;
+   @media (max-width: 650px) {
+    width: 250px;
+    height: 250px;
+  }
 `
 
 export const Number = styled.p`
@@ -60,6 +72,9 @@ export const PokemonDescription = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   grid-row-gap: 30px;
+   @media (max-width: 650px) {
+    width: 300px;
+  }
 `
 
 export const Measure = styled.p`
