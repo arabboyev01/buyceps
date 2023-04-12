@@ -6,11 +6,12 @@ export type MainDataTypes = {
     name: string
     image: any
     types: any
+    pokemons: any
 }
 export type HomePageDataType = {
     data: MainDataTypes
-    loading: boolean | undefined
+    loading?: boolean | undefined
     error?: ApolloError | undefined
-    handleAddPage: any
+    handleAddPage?: any
     handleRoutePage: (e: any, b: any) => void
 }

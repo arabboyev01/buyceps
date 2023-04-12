@@ -8,9 +8,9 @@ import {
     Number,
 } from '@/src/components/Home/home.style'
 import React from 'react'
-import { MainDataTypes } from '@/types'
+import { HomePageDataType, MainDataTypes } from '@/types'
 
-const Rendered = ({data, handleRoutePage}: any) => {
+const Rendered = ({data, handleRoutePage}: HomePageDataType) => {
     return data?.pokemons?.map(({id, name, types, image, number}: MainDataTypes) =>
         <PockemonCart onClick={() => handleRoutePage(id, name)} key={id}>
             <ImageWrapper>
