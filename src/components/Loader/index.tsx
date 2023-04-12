@@ -10,7 +10,7 @@ const Loader = () => {
             ariaLabel="puff-loading"
             wrapperClass=""
             visible={true}
-            wrapperStyle={{position: 'absolute', top: '45%', left: "48%"}}
+            wrapperStyle={{position: 'absolute', top: '45%', left: "48%", zIndex: '1'}}
         />
     )
 }
