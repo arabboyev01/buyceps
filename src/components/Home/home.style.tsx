@@ -5,11 +5,6 @@ export const HomeComponent = styled.div`
   max-width: 1020px;
   margin: 50px auto;
 `
-export const MainTitle = styled.h1`
-  font-size: 32px;
-  margin: 18px 0;
-  font-weight: 700;
-`
 export const ContentWrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
