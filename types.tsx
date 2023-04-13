@@ -14,4 +14,8 @@ export type HomePageDataType = {
     error?: ApolloError | undefined
     handleAddPage?: any
     handleRoutePage: (e: any, b: any) => void
+    indexOfLastPost: number
+    indexOfFirstPost: number
+    handleRemovePage?: () => void
+    disabled?: boolean
 }

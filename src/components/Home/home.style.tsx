@@ -68,21 +68,3 @@ export const Number = styled.p`
   color: rgba(0, 0, 0, 0.4);
 `
 
-export const LoadMore = styled.button`
-  background: #000;
-  color: #fff;
-  margin: 30px 0 30px 450px;
-  padding: 15px 40px;
-  border-radius: 5px;
-  border: none;
-  cursor: pointer;
-  
-  &:hover {
-    color: #000;
-    background: #fff;
-  }
-  
-  @media(max-width: 650px){
-    margin: 30px 0 30px 100px;
-  }
-`

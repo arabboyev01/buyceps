@@ -5,6 +5,8 @@ import { SinglePage } from '@/src/components/SingleCart/single.style'
 import Loader from '@/src/components/Loader'
 import SingleDumb from '@/src/components/SingleCart/SingleDumb'
 import HomePage from "../Home"
+// import PopUp from "../SingleCart/PopUp"
+
 const SingleCart = () => {
     const router = useRouter()
     const {id, name} = router.query
@@ -17,6 +19,7 @@ const SingleCart = () => {
         <SinglePage>
             {loading ? <Loader /> : <SingleDumb data={data?.pokemon} />}
             <HomePage />
+            {/*<PopUp id={id} name={name}/>*/}
         </SinglePage>
     )
 }

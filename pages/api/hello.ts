@@ -39,7 +39,7 @@ export const GET_SINGLE_POKEMON = gql`
     fleeRate
     maxCP
     maxHP
-    image
+    image 
   }
 }
 `
