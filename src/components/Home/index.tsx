@@ -15,7 +15,7 @@ const HomePage = () => {
         variables: {first: count},
     });
 
-    const handleAddPage = function () {
+    const handleAddPage = () => {
         setCurrentPage(currentPage + 1)
         currentPage >= 2 && setCount(count + 20)
     }

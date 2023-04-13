@@ -24,6 +24,19 @@ export const GET_SINGLE_POKEMON = gql`
     id
     number
     name
+    evolutions{
+      id
+      number
+      name
+      classification
+      types
+      resistant
+      weaknesses
+      fleeRate
+      maxCP
+      maxHP
+      image
+    }
     weight{
       minimum
       maximum

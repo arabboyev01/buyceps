@@ -118,3 +118,4 @@ export const SomeInfo = styled.div`
   justify-content: center;
 `
 
+
