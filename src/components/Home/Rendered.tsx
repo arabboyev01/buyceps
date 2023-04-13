@@ -6,6 +6,7 @@ import {
     Types,
     ImageWrapper,
     Number,
+    Main, DetailedButton
 } from '@/src/components/Home/home.style'
 import React from 'react'
 import { HomePageDataType, MainDataTypes } from '@/types'
@@ -17,12 +18,15 @@ const Rendered = ({data, handleRoutePage, indexOfFirstPost, indexOfLastPost}: Ho
                 <Image src={image} alt="images"/>
             </ImageWrapper>
             <Number>#{number}</Number>
-            <Title>{name}</Title>
-            <Types>
+             <Types>
                 {types.map((type: string, index: number) =>
                     <Subtitle key={index}>{type}</Subtitle>
                 )}
             </Types>
+            <Main>
+                <Title>{name}</Title>
+                <DetailedButton onClick={() => handleRoutePage(id, name)}>Detail</DetailedButton>
+            </Main>
         </PockemonCart>
     )
 }

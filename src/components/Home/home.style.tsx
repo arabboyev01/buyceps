@@ -36,6 +36,7 @@ export const Types = styled.div`
   flex-direction: row;
   align-items: center;
   gap: 3px;
+  margin-top: 10px;
 `
 
 export const Subtitle = styled.p`
@@ -66,5 +67,21 @@ export const Number = styled.p`
   font-size: 22px;
   font-weight: 700;
   color: rgba(0, 0, 0, 0.4);
+`
+export const Main = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+`
+
+export const DetailedButton = styled.button`
+  width: 60px;
+  height: 25px;
+  background: #000;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
 `
 
