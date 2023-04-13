@@ -7,7 +7,7 @@
 }
 
 body {
-    background-image: url("../public/bg.jpg");
+    background-image: url("../public/bg.jpg") !important;
     width: 100%;
     height: 100vh;
     background-attachment: fixed;
