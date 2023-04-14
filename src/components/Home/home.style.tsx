@@ -24,6 +24,10 @@ export const PockemonCart = styled.div`
     transform: scale(1.02);
     box-shadow: 1px 1px 6px 0.5px rgba(0, 0, 0, 0.1);
   }
+  
+  @media(max-width: 650px){
+    margin: 0 auto;
+  }
 `
 export const Title = styled.h1`
   font-size: 22px;
