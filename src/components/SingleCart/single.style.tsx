@@ -4,6 +4,10 @@ import styled from 'styled-components'
 export const SinglePage = styled.div`
   max-width: 1000px;
   margin: 100px auto 150px auto;
+  @media (max-width: 650px) {
+    max-width: 400px;
+    margin: 60px auto;
+  }
 `
 
 export const SingleContent = styled.div`
