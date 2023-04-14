@@ -17,7 +17,7 @@ const HomePage = () => {
 
     const handleAddPage = () => {
         setCurrentPage(currentPage + 1)
-        currentPage >= 2 && setCount(count + 20)
+        currentPage >= 3 && setCount(count + 20)
     }
 
     const handleRemovePage = () => {
